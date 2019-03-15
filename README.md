@@ -12,7 +12,7 @@ Windows RT
 Windows RT 8.1
 
 Link del video: https://www.dropbox.com/s/is9pdjhpx7rsp54/Video_1552603800.wmv?dl=0
-Captura del trafico por wireshark:
+Captura del trafico por wireshark: Fotos Añadidas
 
 Instructivo para hacer el exploit:
 msfconsole
